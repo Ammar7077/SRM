@@ -1,0 +1,28 @@
+<%- include("./partials/head.ejs") %>
+
+<h1>Log In</h1>
+
+
+<form action="/login" method="POST">
+    <h3>
+      <div>
+        <label for="username"> Username: </label>
+        <input type="text" name="username" id="username" placeholder="Username" >
+      </div>
+      <br/>
+      <div>
+        <label for="password"> Password: </label>
+        <input type="password" name="password" id="password" placeholder="Password" >
+      </div>
+      <br/>
+      
+    </h3>
+    <button type="submit" class="btnSubmit">
+        <span>LogIn</span>
+    </button>
+      
+</form>
+
+
+<br/>
+<%- include("./partials/end.ejs") %>

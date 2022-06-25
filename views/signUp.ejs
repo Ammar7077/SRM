@@ -1,0 +1,38 @@
+<%- include("./partials/head.ejs") %>
+
+<h1>Sign Up</h1>
+
+
+<form action="/signup" method="POST">
+    <h3>
+      <div>
+        <label for="username"> Username: </label>
+        <input type="text" name="username" id="username" placeholder="Username" >
+      </div>
+      <br/>
+      <div>
+        <label for="password"> Password: </label>
+        <input type="password" name="password" id="password" placeholder="Password" >
+      </div>
+      <br/>
+      <div>
+        <label for="age"> Age: </label>
+        <input type="number" name="age" id="age" placeholder="Age" >
+      </div>
+      <br/>
+      <div>
+        <label for="favoriteGenre"> Favorite Genre: </label>
+        <input type="text" name="favoriteGenre" id="favoriteGenre" placeholder="Favorite Genre" >
+      </div>
+    </h3>
+    <button type="submit" class="btnSubmit">
+        <span>Sign Up</span>
+    </button>
+    <a href="/login">
+        <span>Sign In</span>
+    </a>
+</form>
+
+
+<br/>
+<%- include("./partials/end.ejs") %>

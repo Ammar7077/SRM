@@ -1,0 +1,20 @@
+<%- include("./partials/head.ejs") %>
+
+<h1>All movies</h1>
+
+<% for(m of moviess) { %>
+    <h2>
+        <div class="btn">
+            <a href="/movies/<%= m.id %>">
+                <button class="button"><span>
+                    <%= m.title %>
+                </span>
+                </button>
+            </a>
+        </div>
+        
+    </h2>
+<% } %>
+
+<br/>
+<%- include("./partials/end.ejs") %>

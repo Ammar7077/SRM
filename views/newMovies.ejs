@@ -1,0 +1,27 @@
+<%- include("./partials/head.ejs") %>
+<h1>Add new movie</h1>
+
+<form action="/movies" method="POST">
+  <h3>
+    <div>
+      <label for="title"> Title: </label>
+      <input type="text" name="title" id="title" placeholder="movie title" />
+    </div>
+    <br/>
+    <div>
+      <label for="release"> Release: </label>
+      <input type="number" name="release" id="release" placeholder="movie release"/>
+    </div>
+    <br/>
+    <div>
+      <label for="genre"> Genre: </label>
+      <input type="text" name="genre" id="genre" placeholder="movie genre"/>
+    </div>
+  </h3>
+    <button type="submit" class="btnSubmit">
+        <span>Submit new movie</span>
+    </button>
+    
+</form>
+
+<%- include("./partials/end.ejs") %>
